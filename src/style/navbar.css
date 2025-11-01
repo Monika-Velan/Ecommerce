@@ -1,0 +1,204 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Playfair+Display&display=swap");
+
+.navbar {
+  width: 100%;
+  background-color: #fff;
+  color: #2e2a32;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+
+
+body {
+  background-color: pink !important;
+}
+
+
+
+/* ===== Top Section ===== */
+.navbar-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.brand-name {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 36px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #d4af37, #f8e7a2, #b8860b);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s infinite linear;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+.tagline {
+  font-family: "Playfair Display", serif !important;
+  font-size: 13px;
+  color: #a88b4b;
+  margin-top: -4px;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+.search-box {
+  position: relative;
+  width: 35%;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 8px 35px 8px 15px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background-color: #f5f2e8;
+  font-size: 15px;
+  color: #333;
+}
+
+.search-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #333;
+  font-size: 16px;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon {
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #c89b3c;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* ===== Bottom Section ===== */
+.navbar-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  padding: 8px 0;
+  border-top: 1px solid #f2f2f2;
+}
+
+.navbar-bottom a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.navbar-bottom a:hover {
+  color: #c89b3c;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .navbar-top {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .search-box {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .navbar-bottom {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+
+  .navbar-bottom.active {
+    display: flex;
+    background: white;
+    padding: 10px 0;
+  }
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Playfair+Display:wght@500&display=swap");
+
+.navbar-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 10px 0;
+  border-top: 1px solid #f2f2f2;
+  background-color: #fff;
+}
+
+
+
+.navbar-bottom a {
+  text-decoration: none;
+  color: #2e2a32;
+  font-family: "Cinzel", serif;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.navbar-bottom a:hover {
+  color: #c89b3c;
+}
+
+/* Adjust profile icon */
+.icon {
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.icon:hover {
+  color: #c89b3c;
+  transform: scale(1.1);
+}

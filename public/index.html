@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description"
+    content="Nuvéa – Elegant handcrafted jewellery for every occasion. Discover beauty, grace, and luxury with our unique collection." />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+  <!-- 🌸 Google Fonts for Branding -->
+  <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Playfair+Display:wght@500&display=swap"
+      rel="stylesheet"
+    /> -->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Playfair+Display&display=swap"
+    rel="stylesheet">
+
+  <!-- 🌟 Manifest for PWA -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <title>Nuvéa | Premium Jewellery Store</title>
+
+  <style>
+    /* 🌿 Base Page Setup */
+    body {
+      margin: 0;
+      font-family: "Playfair Display", serif;
+      background-color: #fffdfb;
+      color: #2e2a32;
+      overflow-x: hidden;
+    }
+
+    /* 💫 Centered loading screen before React loads */
+    #root {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .loading-text {
+      font-family: "Cinzel Decorative", serif;
+      font-size: 38px;
+      letter-spacing: 4px;
+      background: linear-gradient(90deg, #d4af37, #f7e9a0, #b8860b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+      animation: shimmer 3s infinite linear;
+      background-size: 200%;
+    }
+
+    @keyframes shimmer {
+      0% {
+        background-position: -200%;
+      }
+
+      100% {
+        background-position: 200%;
+      }
+    }
+
+    .loading-subtext {
+      font-size: 14px;
+      color: #a08a64;
+      font-style: italic;
+      margin-top: 6px;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+
+  <!-- 🌸 Loading fallback until React renders -->
+  <div id="root">
+    <div class="loading-text">🅽🆄🆅é🅰</div>
+    <div class="loading-subtext">Elegance in Every Detail...</div>
+  </div>
+</body>
+
+</html>
