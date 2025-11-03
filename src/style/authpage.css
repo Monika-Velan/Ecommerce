@@ -1,0 +1,88 @@
+/* === AuthPage Container === */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: linear-gradient(90deg, #fadadd 50%, #fff5f5 50%);
+  padding: 20px;
+}
+
+/* === Card === */
+.auth-card {
+  width: 550px;                /* Increased width */
+  background: #fff;
+  padding: 50px 60px;          /* Added more breathing space */
+  border-radius: 20px;
+  box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* === Heading === */
+.auth-card h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  font-weight: 700;
+  color: #5a422d;
+}
+
+/* === Input Fields === */
+.auth-card input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+/* === Button === */
+.auth-card button {
+  width: 100%;
+  padding: 12px;
+  background-color: #d6aa51;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.auth-card button:hover {
+  background-color: #c09745;
+}
+
+/* === Signup Text === */
+.auth-card p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.auth-card a {
+  color: #b68a2f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Optional hover subtle effect */
+.auth-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 8px 28px rgba(0, 0, 0, 0.15);
+}
+
+
+/* === Responsive for small screens === */
+@media (max-width: 768px) {
+  .auth-card {
+    width: 90%;
+    padding: 25px 20px;
+  }
+
+  .auth-card h2 {
+    font-size: 22px;
+  }
+}
