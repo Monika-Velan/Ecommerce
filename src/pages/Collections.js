@@ -339,7 +339,7 @@ const Collections = () => {
     }
 
     setFilteredProducts(updated);
-  }, [selectedCategory, sortOption, searchQuery]);
+  }, [selectedCategory, sortOption, searchQuery, allCollectionProducts]);
 
   // 🟢 Wishlist Toggle
   const toggleWishlist = async (id, e) => {
