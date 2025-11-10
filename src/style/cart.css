@@ -153,22 +153,36 @@
   margin-top: 10px;
 }
 
-.place-order-btn {
+/* ==========================================
+   ✅ Checkout Button (Modern Premium Style)
+========================================== */
+.checkout-btn {
   width: 100%;
-  background-color: #f04e98;
-  color: white;
+  background: linear-gradient(135deg, #d49aff, #b77bff);
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 600;
   border: none;
-  border-radius: 8px;
-  padding: 12px;
-  font-size: 1rem;
+  border-radius: 10px;
+  padding: 14px 0;
+  margin-top: 18px;
   cursor: pointer;
-  margin-top: 20px;
-  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(183, 123, 255, 0.2);
+  transition: all 0.3s ease;
+  letter-spacing: 0.3px;
 }
 
-.place-order-btn:hover {
-  background-color: #3c2a4d;
+.checkout-btn:hover {
+  background: linear-gradient(135deg, #c77cff, #a25eff);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(183, 123, 255, 0.25);
 }
+
+.checkout-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba(183, 123, 255, 0.15);
+}
+
 
 /* Empty cart message */
 .empty-msg {
@@ -227,4 +241,61 @@
   .price-details {
     padding: 20px;
   }
+}
+
+
+/* ✅ Quantity Controls */
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.qty-controls button {
+  background-color: #f6c3d3;
+  border: none;
+  color: #3c2a4d;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.qty-controls button:hover {
+  background-color: #f04e98;
+  color: white;
+}
+
+.qty-controls span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #3c2a4d;
+}
+
+/* ✅ Better alignment for Remove button */
+.cart-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.remove-btn {
+  align-self: flex-start;
+  background-color: #f04e98;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.remove-btn:hover {
+  background-color: #c03b78;
 }

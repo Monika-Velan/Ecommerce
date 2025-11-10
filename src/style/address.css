@@ -1,0 +1,255 @@
+/* ===== Page Background ===== */
+.address-page {
+  background: pink;
+  min-height: 100vh;
+  padding: 150px 0 90px; /* keeps heading visible */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+/* ===== Outer Container ===== */
+.address-container {
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+/* ===== Main Checkout Card ===== */
+.address-card {
+  background: #fff;
+  border-radius: 22px;
+  padding: 60px 70px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.address-card:hover {
+  transform: translateY(-2px);
+}
+
+.address-card h2 {
+  text-align: center;
+  color: #b8860b;
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* ===== Section Title ===== */
+.section-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  color: #3b2c57;
+  margin: 40px 0 25px;
+  border-bottom: 2px solid #f1e2ff;
+  padding-bottom: 6px;
+}
+
+/* ===== Address Form ===== */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px 30px;
+  margin-bottom: 40px;
+}
+
+.form-grid input {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
+  border: 1px solid #d9d9e3;
+  border-radius: 10px;
+  background-color: #fffafc;
+  outline: none;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-grid input:focus {
+  border-color: #b77bff;
+  background: #fff;
+  box-shadow: 0 0 6px rgba(183, 123, 255, 0.3);
+}
+
+/* ===== Payment Options ===== */
+.payment-options {
+  margin-bottom: 25px;
+}
+
+.payment-option {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid #e8e6f2;
+  border-radius: 14px;
+  padding: 18px 22px;
+  background: #faf8ff;
+  margin-bottom: 18px;
+  transition: 0.3s ease;
+}
+
+.payment-option.active {
+  border-color: #b77bff;
+  background: #f4ecff;
+  box-shadow: 0 4px 12px rgba(183, 123, 255, 0.18);
+}
+
+.payment-option input[type="radio"] {
+  accent-color: #b77bff;
+  margin-right: 8px;
+}
+
+.payment-option span {
+  font-size: 17px;
+  font-weight: 600;
+  color: #2d1f3d;
+}
+
+.option-desc {
+  color: #666;
+  font-size: 14px;
+  margin-left: 25px;
+}
+
+/* ===== UPI & CARD Fields ===== */
+.upi-fields,
+.card-fields {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 520px; /* shorter and centered look */
+}
+
+.upi-fields input,
+.upi-fields select,
+.card-fields input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d9d9e3;
+  border-radius: 10px;
+  font-size: 15px;
+  background: #fff;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.upi-fields input:focus,
+.upi-fields select:focus,
+.card-fields input:focus {
+  border-color: #b77bff;
+  box-shadow: 0 0 6px rgba(183, 123, 255, 0.3);
+}
+
+.card-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+/* ===== Stripe Payment Form ===== */
+.stripe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 520px;
+  margin-top: 15px;
+}
+
+.card-element {
+  padding: 12px;
+  border: 1px solid #d9d9e3;
+  border-radius: 10px;
+  background: #fffafc;
+  font-size: 15px;
+}
+
+.pay-btn {
+  background: linear-gradient(135deg, #d49aff, #b77bff);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.pay-btn:hover {
+  background: linear-gradient(135deg, #c77cff, #a25eff);
+}
+
+.success-msg {
+  color: #28a745;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ===== Confirm Order Button ===== */
+.order-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #d49aff, #b77bff);
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 18px 0;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: all 0.3s ease;
+  letter-spacing: 0.4px;
+}
+
+.order-btn:hover {
+  background: linear-gradient(135deg, #c77cff, #a25eff);
+  transform: translateY(-2px);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .address-card {
+    padding: 40px 35px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .upi-fields,
+  .card-fields,
+  .stripe-form {
+    max-width: 100%;
+  }
+
+  .address-card h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .address-card {
+    padding: 28px 20px;
+  }
+
+  .address-card h2 {
+    font-size: 26px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .order-btn {
+    font-size: 16px;
+    padding: 14px 0;
+  }
+}

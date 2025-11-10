@@ -1,0 +1,151 @@
+/* ==========================
+   ORDER SUMMARY PAGE STYLING
+========================== */
+
+.order-summary-page {
+  background-color: pink;
+  min-height: 100vh;
+  padding: 140px 20px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.order-summary-card {
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+  padding: 60px 80px;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.success-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: #6b4eff;
+  animation: pop 0.6s ease;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.order-summary-card h2 {
+  font-size: 2.4rem;
+  color: #3c2a4d;
+  margin-bottom: 10px;
+}
+
+.thank-you {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.order-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  background: #faf8ff;
+  border-radius: 14px;
+  padding: 20px 25px;
+  box-shadow: 0 4px 10px rgba(183, 123, 255, 0.1);
+  margin-bottom: 35px;
+}
+
+.order-info h4 {
+  font-size: 1rem;
+  color: #6b4eff;
+  margin-bottom: 5px;
+}
+
+.order-info p {
+  font-size: 1rem;
+  color: #2d1f3d;
+  font-weight: 600;
+}
+
+.shipping-details {
+  text-align: left;
+  background: #fffafc;
+  border-radius: 12px;
+  padding: 18px 25px;
+  border: 1px solid #eee;
+  margin-bottom: 40px;
+}
+
+.shipping-details h3 {
+  color: #3c2a4d;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.shipping-details p {
+  color: #4a3b5e;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.summary-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.home-btn,
+.orders-btn,
+.back-btn {
+  background: linear-gradient(135deg, #d49aff, #b77bff);
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 14px 22px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.home-btn:hover,
+.orders-btn:hover,
+.back-btn:hover {
+  background: linear-gradient(135deg, #c77cff, #a25eff);
+  transform: translateY(-2px);
+}
+
+.back-btn {
+  margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .order-summary-card {
+    padding: 40px 25px;
+  }
+
+  .order-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .summary-buttons {
+    flex-direction: column;
+  }
+
+  .home-btn,
+  .orders-btn {
+    width: 100%;
+  }
+}

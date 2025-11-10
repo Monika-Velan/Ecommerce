@@ -10,6 +10,12 @@ import Wishlist from "./pages/Wishlist";
 import CartPage from "./pages/CartPage";
 import AuthPage from "./pages/AuthPage";
 import { SearchProvider } from "./context/SearchContext"; // ✅ Added context
+import AddressPage from "./pages/AddressPage";
+import ProfilePage from "./pages/ProfilePage";
+import ProtectedRoute from "./components/ProtectedRoute";
+import OrderSummary from "./pages/OrderSummary";
+
+
 
 function App() {
   return (
@@ -26,6 +32,18 @@ function App() {
             <Route path="/product/:id" element={<ProductDetails />} />
             <Route path="/wishlist" element={<Wishlist />} />
             <Route path="/cart" element={<CartPage />} />
+            <Route path="/address" element={<AddressPage />} />
+            <Route path="/order-summary" element={<OrderSummary />} />
+            <Route
+              path="/profile"
+              element={
+                <ProtectedRoute>
+                  <ProfilePage />
+                </ProtectedRoute>
+              }
+            />
+
+
           </Routes>
         </div>
       </Router>

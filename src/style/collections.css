@@ -236,3 +236,40 @@
     top: 0;
   }
 }
+
+
+
+.filter-toggle-btn {
+  background: #b45b5b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.3s ease;
+}
+
+.filter-toggle-btn:hover {
+  background: #8e4646;
+}
+
+@media (max-width: 768px) {
+  .filter-toggle-btn {
+    margin-top: 10px;
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+}
+
+.filter-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
